@@ -1,3 +1,0 @@
-# comment
-
-print('hello world')
