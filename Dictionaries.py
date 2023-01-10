@@ -53,3 +53,15 @@ print(list(dict1.values()))
 #access the list returned by dict1.items()
 print(list(dict1.items()))
 
+#Conversions between data types
+#converting to a string
+num_string = "23"
+print(type(str(num_string)))
+
+#converting to an integer
+str_integer = "12"
+print(type(int(str_integer)))
+
+my_dict = {1: "Cisco", 2: "HP", 3: "Juniper", 4: "Arista", 5: "Avaya"}
+print(sorted(my_dict.values())[0])
+
