@@ -18,9 +18,9 @@ print(my_tuple[-1])
 # my_tuple[1] = 10 TypeError: 'tuple' object does not support item assignment
 # del my_tuple[1] TypeError: 'tuple' object doesn't support item deletion
 
-# /tuple assignment: this means, you assign a tuple of variables to a tuple of values
-# and map each variable to a corresponding value of second tuple; tuple packing and
-# unpacking;
+'''tuple assignment: this means, you assign a tuple of variables to a tuple of values
+and map each variable to a corresponding value of second tuple; tuple packing and
+unpacking'''
 tuple1 = ('Cisco', '2600', '12.4')
 print(tuple1)
 (vendor, model, ios) = tuple1
