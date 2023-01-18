@@ -23,7 +23,7 @@ print("         ", "How I wonder what you are!")'''
 #     return dict
 # print(char_frequency('google.com'))
 
-num = int(input('Write a value: '))
+'''num = int(input('Write a value: '))
 counter = int(input('break value: '))
 
 result = 0
@@ -32,7 +32,22 @@ for i in range(1, num):
     result += i
     if result == counter:
         break
-print( result, 'pppp')
+print( result, 'pppp')'''
+
+
+'''n = int(input("Enter number"))
+sum = 0
+
+for num in range(1, n + 1, 1):
+    sum = sum + num
+print("Sum of first ", n, "numbers is: ", sum)'''
+
+
+
+
+
+
+
 
 
 
