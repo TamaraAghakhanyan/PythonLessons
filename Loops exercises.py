@@ -37,5 +37,16 @@ while x <= 10:
         print(i)'''
 
 
+x = 6
+x += 3
+print(x)
+import random
+print(dir(random))
+
+
+
+
+
+
 
 

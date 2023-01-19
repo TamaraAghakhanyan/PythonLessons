@@ -43,6 +43,24 @@ for num in range(1, n + 1, 1):
 print("Sum of first ", n, "numbers is: ", sum)'''
 
 
+# *Write following program: define a, b and c storing some numbers,
+# calculate and print their sum, multiplication, division, etc.
+
+a = int(input("enter first number: "))
+b = int(input("enter second number: "))
+c = int(input("enter third number: "))
+
+sum = a + b + c
+print("Sum of all numbers is: ", sum)
+
+mult = a * b * c
+print("Multiplication of all numbers is: ", mult)
+
+div = a / b / c
+print("Division of all numbers is: ", div)
+
+
+
 
 
 
