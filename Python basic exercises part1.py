@@ -43,8 +43,8 @@ for num in range(1, n + 1, 1):
 print("Sum of first ", n, "numbers is: ", sum)'''
 
 
-# *Write following program: define a, b and c storing some numbers,
-# calculate and print their sum, multiplication, division, etc.
+''''*Write following program: define a, b and c storing some numbers,
+calculate and print their sum, multiplication, division, etc.
 
 a = int(input("enter first number: "))
 b = int(input("enter second number: "))
@@ -57,7 +57,29 @@ mult = a * b * c
 print("Multiplication of all numbers is: ", mult)
 
 div = a / b / c
-print("Division of all numbers is: ", div)
+print("Division of all numbers is: ", div)'''
+
+
+
+
+
+# *Write following program: calculate how much money you should pay for 1500$ bank loan if annual percentage is 16%
+my_money = 1500
+percentage = 0.16
+loan = my_money + my_money * percentage
+print(loan)
+
+
+
+# *Write program that can make compliment to several persons each time just changing name
+# *Create 2 modules: 1. containing data about student; 2. using data from first module
+# *Create 2 modules: 1. containing data about student; 2. using data from first module
+
+# *Write a square root calculator that performs for some inputed value , esel im koxmic # *Write a program containing 3 modules:
+# # 1. calculating power of number (number and power are inputed from console),import math
+# 2. calculating remainder of some number devidied to other number (inputed from console),
+# 3. performing operation from first and second module
+
 
 
 
