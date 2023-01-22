@@ -94,7 +94,7 @@ for i in range(n):
 print('The factors of', num, 'are:')
 for i in range(1, num+1):
     if(num % i) == 0:
-        print(i, end=' ')'''
+        print(i, end=' ')
 
 a = int(input("Enter 1st Number: "))
 n = int(input("Enter the last Number: "))
@@ -107,6 +107,24 @@ for num in range(a, n + 1):
                break
        else:
            print(num)
+
+#Exercise 12: Display Fibonacci series up to 10 terms
+
+num1 = 0
+num2 = 1
+result = 0
+
+for i in range(10): # run loop 10 times
+    print(num1, end=" ") # print next number of a series
+    result = num1 + num2 # add last two numbers to get next number
+
+    num1 = num2  # update values
+    num2 = result'''
+
+
+
+
+
 
 
 
