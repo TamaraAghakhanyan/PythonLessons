@@ -3,7 +3,8 @@
 while x <= 10:
     print(x)
     x = x + 1'''
-
+import math
+from math import factorial
 
 #Exercise 1: Write a Python program to find those numbers which are divisible by 7 and
 #multiple of 5,between 1500 and 2700 (both included)
@@ -120,6 +121,11 @@ for i in range(10): # run loop 10 times
 
     num1 = num2  # update values
     num2 = result'''
+
+# Exercise 13: Find the factorial of a given number
+# Write a program to use the loop to find the factorial of a given number.
+
+
 
 
 
