@@ -126,6 +126,9 @@ for i in range(10): # run loop 10 times
 # Write a program to use the loop to find the factorial of a given number.
 
 
+# Exercise 14: Reverse a given integer number
+# Given: 76542  Expected output: 24567
+
 
 
 
