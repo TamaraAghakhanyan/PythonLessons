@@ -129,7 +129,13 @@ for i in range(10): # run loop 10 times
 # Exercise 14: Reverse a given integer number
 # Given: 76542  Expected output: 24567
 
+# Use for loop to generate a list of numbers from 9 to 50 divisible by 2.
 
+print("Below numbers are divisible by 2:")
+for i  in range(9,51):
+    if i % 2 == 0:
+        print(i)
+print("End of the list")
 
 
 
