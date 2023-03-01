@@ -64,10 +64,10 @@ print("Division of all numbers is: ", div)'''
 
 
 # *Write following program: calculate how much money you should pay for 1500$ bank loan if annual percentage is 16%
-my_money = 1500
-percentage = 0.16
-loan = my_money + my_money * percentage
-print(loan)
+# my_money = 1500
+# percentage = 0.16
+# loan = my_money + my_money * percentage
+# print(loan)
 
 
 
@@ -81,7 +81,12 @@ print(loan)
 # 3. performing operation from first and second module
 
 
-
+"""
+Exercise 1:
+Use python builtin methods to print the length of the string.
+"""
+x = "Hello World"
+print(len(x))
 
 
 
