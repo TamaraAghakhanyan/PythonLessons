@@ -348,12 +348,50 @@ Prime numbers between 25 and 50 are:
 start = 25
 end = 50
 
+for num in range(start, end + 1):
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
+
+
+'''Exercise 12: Display Fibonacci series up to 10 terms
+The Fibonacci Sequence is a series of numbers. The next number is found by adding up the two numbers before it. The first two numbers are 0 and 1.
+
+For example, 0, 1, 1, 2, 3, 5, 8, 13, 21. The next number in this series above is 13+21 = 34.
+
+Expected output:
+
+Fibonacci sequence:
+0  1  1  2  3  5  8  13  21  34'''
+
+num1 = 0
+num2 = 1
+res = 0
+for i in range(10):
+    print(num1, end="  ")
+    res = num1 + num2
+
+    num1 = num2
+    num2 = res
 
 
 
+'''Exercise 13: Find the factorial of a given number
+Write a program to use the loop to find the factorial of a given number.
 
+The factorial (symbol: !) means to multiply all whole numbers from the chosen number down to 1.
 
+For example: calculate the factorial of 5
 
+5! = 5 × 4 × 3 × 2 × 1 = 120
+120'''
 
+factorial = 1
+for i in range(1,5):
+    factorial = factorial * i
 
+print(factorial)
 
