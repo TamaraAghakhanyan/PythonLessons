@@ -101,6 +101,8 @@ for i in range(size):
     elif a < b:
         c = str(string1[a:b+4])
         string1.replace(c, "good")
+        print(string1)
+
 
 
 
