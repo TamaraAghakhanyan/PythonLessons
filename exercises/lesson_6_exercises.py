@@ -24,12 +24,12 @@ Exercise 3:
 In the while loop, when i is 3, jump directly to the next iteration.
 """
 
-i = 0
-while i < 4:
-    i = i + 1
-    if i == 3:
-        continue
-    print(i)
+# i = 0
+# while i < 4:
+#     i = i + 1
+#     if i == 3:
+#         continue
+#     print(i)
 
 
 
@@ -50,7 +50,10 @@ In the loop, when the item value is "banana", jump directly to the next item.
 
 fruits = ["apple", "banana", "cherry"]
 
-
+for x in fruits:
+    if x == "banana":
+        continue
+    print(x)
 
 
 """
@@ -58,11 +61,15 @@ Exercise 6:
 Use for loop and range function to print "Armenia" 6 times.
 """
 
-# code goes here
+# for i in range(6):
+#     print("Armenia")
 
 """
 Exercise 7:
 Loop through the string and print all the characters except 2nd 'a' letter.
 """
-my_str = "Ararat"
-# code goes here
+# my_str = "Ararat"
+# for char in my_str:
+#     if char == "a":
+#         continue
+#     print(char)
