@@ -83,25 +83,29 @@ Ex.2
    Sample String : "The lyrics is poor!"
    Expected Result : "The lyrics is poor!" 
 """
-
-# code goes here
+# Example 1
 string1 = "The lyrics is not that poor!"
-# a = (string1.index("not"))
-# b = (string1.index("poor"))
-#
-# if a < b:
-#     string1.replace()
+a = string1.index("not")
+b = string1.index("poor")
 
-size =  len(string1)
+if "not" in string1 and "poor" in string1 and a < b:
+    a = string1.index("not")
+    b = string1.index("poor")
+    string1 = str(string1[:a]) + "good"
+print(string1)
 
-for i in range(size):
-    if "not" in string1 and "poor" in string1:
-        a = (string1.index("not"))
-        b = (string1.index("poor"))
-    elif a < b:
-        c = str(string1[a:b+4])
-        string1.replace(c, "good")
-        print(string1)
+
+# Example 2
+string2 = "The lyrics is poor!"
+y = string2.index("poor")
+
+if "not" in string2 and "poor" in string2 and x < y:
+    x = string2.index("not")
+    y = string2.index("poor")
+    string2 = str(string1[:x]) + "good"
+print(string2)
+
+
 
 
 
