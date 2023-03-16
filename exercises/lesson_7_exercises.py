@@ -28,10 +28,7 @@ Print list in reverse order using a loop
 20
 10
 """
-list1 = [10, 20, 30, 40, 50]
-
-for i in reversed(list1):
-    print(i)
+#
 
 """
 Exercise 4:
@@ -42,11 +39,11 @@ then the 1st index item, and so on till the last element.
 Any leftover items will get added at the end of the new list.
 Expected output ['My', 'name', 'is', 'Kelly']
 """
-list1 = ["M", "na", "i", "Ke"]
-list2 = ["y", "me", "s", "lly"]
-
-list3 = [i + j for i, j in zip(list1, list2)]
-print(list3)
+# list1 = ["M", "na", "i", "Ke"]
+# list2 = ["y", "me", "s", "lly"]
+#
+# list3 = [i + j for i, j in zip(list1, list2)]
+# print(list3)
 
 
 
@@ -63,15 +60,15 @@ If it is divisible by both 3 and 5, it should return “FizzBuzz”.
 Otherwise, it should return the same number.
 """
 
-list1 = [10, 20, 30, 40, 50]
-
-for i in list1:
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz")
-    elif i % 3 == 0:
-        print("Fizz")
-    elif i % 5 == 0:
-        print("Buzz")
+# list1 = [10, 20, 30, 40, 50]
+#
+# for i in list1:
+#     if i % 3 == 0 and i % 5 == 0:
+#         print("FizzBuzz")
+#     elif i % 3 == 0:
+#         print("Fizz")
+#     elif i % 5 == 0:
+#         print("Buzz")
 
 
 
@@ -88,5 +85,25 @@ Ex.2
 """
 
 # code goes here
+string1 = "The lyrics is not that poor!"
+# a = (string1.index("not"))
+# b = (string1.index("poor"))
+#
+# if a < b:
+#     string1.replace()
+
+size =  len(string1)
+
+for i in range(size):
+    if "not" in string1 and "poor" in string1:
+        a = (string1.index("not"))
+        b = (string1.index("poor"))
+    elif a < b:
+        c = str(string1[a:b+4])
+        string1.replace(c, "good")
+
+
+
+
 
 
