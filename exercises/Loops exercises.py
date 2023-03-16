@@ -27,22 +27,18 @@ from math import factorial
 #of three print "Fizz" instead of the number and for he multiples of five print "Buzz".
 #For numbers which are multiples of both three and five print "FizzBuzz".
 
-'''for i in range(51):
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz")
-    elif i % 5 == 0:
-        print('Buzz')
-    elif i % 3 == 0:
-        print('Fizz')
-    else:
-        print(i)
+# for i in range(51):
+#     if i % 3 == 0 and i % 5 == 0:
+#         print("FizzBuzz")
+#     elif i % 5 == 0:
+#         print('Buzz')
+#     elif i % 3 == 0:
+#         print('Fizz')
+#     else:
+#         print(i)
 
 
-x = 6
-x += 3
-print(x)
-import random
-print(dir(random))'''
+
 
 
 # Exercise 1: Print First 10 natural numbers using while loop
