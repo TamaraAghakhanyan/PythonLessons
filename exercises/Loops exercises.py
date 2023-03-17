@@ -370,8 +370,33 @@ n = 5
 Expected output:
 24690'''
 
-number_of_terms = 5
-print(sum(int('2' * (i + 1)) for i in range(number_of_terms)))
+# number_of_terms = 5
+# print(sum(int('2' * (i + 1)) for i in range(number_of_terms)))
 
 
+'''Exercise 18: Print the following pattern
+Write a program to print the following start pattern using the for loop
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+
+'''
+
+rows = 5
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print("*",  end=" ")
+    print("")
+
+for i in reversed(range(1, rows)):
+    for j in reversed(range(1, i + 1)):
+        print("*",  end=" ")
+    print("")
 
