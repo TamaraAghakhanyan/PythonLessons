@@ -2,10 +2,13 @@
 Exercise 1: Below are the two lists convert it into the dictionary.
 """
 
-keys = ["Ten", "Twenty", "Thirty"]
-values = [10, 20, 30]
+# keys = ["Ten", "Twenty", "Thirty"]
+# values = [10, 20, 30]
+#
+# dict = dict(zip(keys, values))
+# print(dict)
 
-# code goes here
+
 
 
 """
@@ -16,7 +19,13 @@ sampleDict = {
     "class": {"student": {"name": "Mike", "marks": {"physics": 70, "history": 80}}}
 }
 
-# code goes here
+keys = sampleDict.keys()
+values = sampleDict.values()
+print(keys)
+print(values)
+
+
+
 
 
 """
