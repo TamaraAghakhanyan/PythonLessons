@@ -16,13 +16,14 @@ Exercise 2:
 Access the value of key "history" from the below dict
 """
 sampleDict = {
-    "class": {"student": {"name": "Mike", "marks": {"physics": 70, "history": 80}}}
+    "class":
+        {"student":
+             {"name": "Mike",
+              "marks":
+                  {"physics": 70, "history": 80}}}
 }
 
-keys = sampleDict.keys()
-values = sampleDict.values()
-print(keys)
-print(values)
+print(sampleDict['class']['student']['marks']['history'])
 
 
 
@@ -34,19 +35,26 @@ Create a new dictionary by extracting the following keys from a below dictionary
 """
 sampleDict = {"name": "Kelly", "age": 25, "salary": 8000, "city": "New york"}
 # Keys to extract
-keys = ["name", "salary"]
+# keys = ["name", "salary"]
 
 # Expected output: {'name': 'Kelly', 'salary': 8000}
 
-# code goes here
-
+del sampleDict["age"]
+del sampleDict["city"]
+print(sampleDict)
 """
 Exercise 4:
 Slice list into 3 equal chunks and reverse each chunk
 """
 sample_list = [11, 45, 8, 23, 14, 12, 78, 45, 89]
 
-# code goes here
+chunked_list = []
+chunk_size = 3
+
+for i in range(0, len(sample_list), chunk_size):
+    chunked_list.append(sample_list[i: i + chunk_size])
+
+print((chunked_list[::-1]))
 
 
 
@@ -60,7 +68,19 @@ sample_list = [11, 45, 8, 11, 23, 45, 23, 45, 89]
 
 # Expected Outcome: Printing count of each item  {11: 2, 45: 3, 8: 1, 23: 2, 89: 1}
 
-# code goes here
+count = []
+list1 = []
+for i in sample_list:
+    a = sample_list.count(i)
+    if i in list1 or a in count:
+        continue
+    else:
+        list1.append(i)
+        count.append(a)
+
+print(count)
+print(list1)
+
 
 """
 Exercise 6:
