@@ -4,3 +4,4 @@
 #     3. the local namespaces
 
 
+print(list(range(10)))
