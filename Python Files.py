@@ -36,6 +36,8 @@ newfile = open("newfile.txt", "w+")  # opens a file for both writing and reading
 
 newfile = open("newfile.txt", "x")  # opens for exclusive creation, failing if the file already exists
 
+
+
 # Files - closing a file
 newfile.closed  # checking if a file is closed
 
