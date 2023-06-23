@@ -161,4 +161,57 @@ a = "I enjoy learning programming languages such as Python 3"
 
 # OR in RegEx
 # to specify two regular expressions for pattern matching at the same time with
-# the or operator in between them
+# the or operator in between them:
+
+a = "I enjoy learning programming languages such as Python 3"
+# result = re.search("\W(\w{2})\W| ([A-Z]\w{5})\s\d", a)
+# where:
+# \W(\w{2})\W - two words characters enclosed by non word characters
+# | - OR (pipeline)
+# ([A-Z]\w{5})\s\d -  group which starts with an uppercase letter
+#       that is followed by exactly five word characters after which the group is
+#       followed by a space and a digit.
+
+# result = re.search("\W(\w{2})\W| ([A-Z]\w{5})\s\d", a)
+# result.group()
+# ' as '
+# result.groups()
+# ('as', None)
+# result.group(1)
+# 'as'
+# result.group(2)
+
+# result.group(2)
+# result = re.search("\W(\w{50})\W| ([A-Z]\w{5})\s\d", a)
+# result.group(1)
+# result.group(2)
+# 'Python'
+# result.groups()
+# (None, 'Python')
+
+
+
+# split() & subn()
+
+
+
+# re.split() - to split the string by the occurrences of a certain pattern:
+#       result = re.split(" ", a) or  result = re.split("\s", a)
+#       result
+#       ['I', 'enjoy', 'learning', 'programming', 'languages', 'such', 'as', 'Python', '3']
+
+
+# to split the string using the two letter words as delimiters:
+#       result = re.split("\W\w{2}\W", a)
+#       result
+#       ['I enjoy learning programming languages such', 'Python 3']
+
+# re.subn() - to replace all the occurrences of a certain pattern inside the
+#               string with another string. It also returns the number of
+#               replacements that have been made, along with the modified
+#               version of the string in the form of a tuple.
+
+# to replace all the spaces inside our string with underscores using the subn() method:
+#       result = re.subn("\s", "_", a)
+#       result
+#       ('I_enjoy_learning_programming_languages_such_as_Python_3', 8)
