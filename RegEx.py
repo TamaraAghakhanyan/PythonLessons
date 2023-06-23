@@ -81,31 +81,84 @@ arp = "22.22.22.1   0     b4:a9:ff:c8: 45 VLAN#222        L"
 # \A - matches the character at the beginning of the string
 # \Z - matches the character at the end of the string
 
+
+
 # \D - to match any non-digit characters inside the string
 a = "I enjoy learning programming languages such as Python 3"
-# result = re.search("\D+",a)
-# result.group()
-# 'I enjoy learning programming languages such as Python
+        # result = re.search("\D+",a)
+        # result.group()
+        # 'I enjoy learning programming languages such as Python
 
 # \S - to match any non-whitecpace characters inside the string
-# result = re.search("\S+", a)
-# result.group()
-# 'I'
+        # result = re.search("\S+", a)
+        # result.group()
+        # 'I'
 
 # \W - matches any non-word characters inside the string
-# result = re.search("\W+", a)
-# result.group()
-# ' '
-# a.index(result.group())
-# 1
+        # result = re.search("\W+", a)
+        # result.group()
+        # ' '
+        # a.index(result.group())
+        # 1
 
 
 # # \A - matches the character at the beginning of the string
-# result = re.search("\AI", a)
-# result.group()
-# 'I'
+        # result = re.search("\AI", a)
+        # result.group()
+        # 'I'
 
 # \Z - matches the character at the end of the string
-# result = re.search("3\Z", a)
-# result.group()
-# '3'
+        # result = re.search("3\Z", a)
+        # result.group()
+        # '3'
+
+# sets of characters
+# to get all the lowercase letters in the string:
+#       result = re.findall("[a-z]", a)
+
+# to get all the uppercase letters in the string:
+#       result = re.findall("[A-Z]", a)
+
+# to match all of the lowercase letters in a certain subset of letters:
+#       result = re.findall("[a-d]", a)
+#       ['a', 'a', 'a', 'a', 'c', 'a']
+
+# to match the subset of characters we are trying to match doesn't contain
+# consecutive letters:
+#       result = re.findall("[a,P,g]",a)
+#       result
+#       ['a', 'g', 'g', 'a', 'g', 'a', 'g', 'a', 'g', 'a', 'P']
+
+# to match all the characters in the string except a specific character:
+#       result = re.findall("[^a]", a)
+#       result
+#       ['I', ' ', 'e', 'n', 'j', 'o', 'y', ' ', 'l', 'e', 'r', 'n', 'i', 'n',
+#       'g', ' ', 'p', 'r', 'o', 'g', 'r', 'm', 'm', 'i', 'n'
+#       , 'g', ' ', 'l', 'n', 'g', 'u', 'g', 'e', 's', ' ', 's
+#       ', 'u', 'c', 'h', ' ', 's', ' ', 'P', 'y', 't', 'h', 'o', 'n', ' ', '3']
+
+
+# to match all the digits in the string:
+#       result = re.findall("[0-9]", a)
+#       result
+#       ['3']
+
+# to match all the digits between 1-5 in the string:\
+#         result = re.findall("[1-5]", a)
+#         result
+#         ['3']
+
+# to match all the occurences of certain digits in the string:
+#         result = re.findall("[135]", a)
+#         result
+#         ['3']
+
+#  to match all the characters in the string except a certain digit:
+#         result = re.findall("[^3]", a)
+#         result
+
+
+
+# OR in RegEx
+# to specify two regular expressions for pattern matching at the same time with
+# the or operator in between them
