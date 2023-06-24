@@ -3,6 +3,11 @@
 mystr = "You can learn programming language, whatever it is Python2, Python3, Pearl, Java" \
         "javascript or PHP"
 
+# match() - This method matches patterns only
+#       at the beginning of the string so, since there's no '255' at the
+#       beginning of our target string, the result is going to be None,
+#       so this means <class 'NoneType'>.
+
 # import re
 #
 # # a = re.match(pattern, string, optional flags)
