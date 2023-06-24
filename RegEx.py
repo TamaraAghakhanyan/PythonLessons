@@ -215,3 +215,19 @@ a = "I enjoy learning programming languages such as Python 3"
 #       result = re.subn("\s", "_", a)
 #       result
 #       ('I_enjoy_learning_programming_languages_such_as_Python_3', 8)
+
+
+# Additional Regex Syntax Elements
+
+# ^ - to perform matching at the beginning of the string(at the beginning of the line):
+#         re.search("^[A-Z]\s\w{5}", a)
+#         <re.Match object; span=(0, 7), match='I enjoy'>
+
+# $ - to perform matching at the end of the string(at the end of the line):
+#         re.search("[A-Z]\w{5}\s\d$", a)
+#         <re.Match object; span=(47, 55), match='Python 3'>
+
+# ? - for repetitions inside regular expression patterns:
+x = "He is ... zzzzzzzzzz ... sleeeeeeping"
+#       re.search("z(3-10)?", x)
+#       <re.Match object; span=(10, 11), match='z'>
