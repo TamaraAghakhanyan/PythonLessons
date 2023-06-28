@@ -81,3 +81,44 @@ True'''
 
 
 # Inheritance
+
+# Parent Class:
+
+class MyRouter(object):
+    "This is a class that describes the characteristics of the router"
+    def __init__(self, routername, model, serialno, ios) :
+        self.routername = routername
+        self.model = model
+        self.serialno = serialno
+        self.ios = ios
+    def print_router(self, manuf_date):
+        print("The router name is: ", self.routername)
+        print("The router model is: ", self.model)
+        print("The serial number of: ", self.serialno)
+        print("The IOS version is: ", self.ios)
+        print("The model and date combined: ", self.model + manuf_date)
+
+
+# Child Class:
+
+class MyNewRouter(MyRouter):
+    def __init__(self, routername, model, serialno, ios, portsno):
+        super().__init__(routername, model, serialno, ios)
+        self.portsno = portsno
+
+    def print_new_router(self, string):
+        print(string + self.model)
+
+'''newRouter1 = MyNewRouter("newr1","1800", "111111", "12.1","10")
+newRouter1.portsno
+'10'
+newRouter1.print_router(" thanks Chatgpt")
+The router name is:  newr1
+The router model is:  1800
+The serial number of:  111111
+The IOS version is:  12.1
+The model and date combined:  1800 thanks Chatgpt
+newRouter1.print_new_router(" thanks Chatgpt")
+ thanks Chatgpt1800
+issubclass (MyNewRouter, MyRouter)
+True'''
