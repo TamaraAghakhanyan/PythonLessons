@@ -23,7 +23,7 @@ import time
 #                   as many seconds as you enter in between its parentheses.
 
 
-def myfunction():
+'''def myfunction():
     print("Start a thread")
     time.sleep(3)
     print("End a thread")
@@ -36,6 +36,35 @@ for i in range(5):
     threads.append(th)
 
 for th in threads:
-    th.join()
+    th.join()'''
 
+'''Start a thread
+Start a thread
+Start a thread
+Start a thread
+Start a thread
+End a threadEnd a threadEnd a thread
+End a thread
+End a thread'''
 
+# without threading:
+'''def myfunction():
+    print("Start a thread")
+    time.sleep(3)
+    print("End a thread")
+
+threads = []
+
+for i in range(5):
+    myfunction()'''
+
+'''Start a thread
+End a thread
+Start a thread
+End a thread
+Start a thread
+End a thread
+Start a thread
+End a thread
+Start a thread
+End a thread'''
