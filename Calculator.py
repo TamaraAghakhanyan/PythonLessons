@@ -2,11 +2,18 @@ import math
 
 # to create interactive user menu
 
+#While loop for continuously running the program and allowing the user to
+# always go back to the main menu and choose another option
 while True:
+    # The user picks the math operation from the menu (we use \n to insert
+    # a new row in the menu)
     print("\nChoose the math operation. \n0 - Additon\n1 - Substraction\n2 - Multiplication\n3 - Division\n4 - Modulo\n5 - Raising to a power\n6 - Square root\n7 - Logarithm\n8 - Sine\n9 - Cosine\n10 - Tangent\n")
 
-    oper = input("\nYour opton from the menu: ")
-    #additon
+    oper = input("\nYour opton from the menu: ")#The variable that saves the option
+    # chosen by the user
+
+
+    #Additon
     if oper == "0":
         val1 = float(input("\nFirst Value: "))
         val2 = float(input("\nSecond Value: "))
