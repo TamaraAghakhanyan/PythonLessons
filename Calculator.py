@@ -62,7 +62,8 @@ while True:
     elif oper == "3":
         val1 = float(input("\nFirst Value: "))
         val2 = float(input("\nSecond Value: "))
-        result = "{:.{}f}".format((val1 / val2), 4)
+        val3 = val1 / val2
+        result = int(val3 * 10 ** 4) / 10 ** 4
 
         print("\nThe result is: " + str(result) + "\n")
 
