@@ -112,7 +112,7 @@ while True:
 
     #Logarithm
     elif oper == "7":
-        val1 = float(input("\nEnter the value for calculating the logarithm to base: "))
+        val1 = float(input("\nEnter the value for calculating the logarithm to base 2: "))
 
         print("\nThe result is: " + str(math.log(val1, 2)) + "\n")
 
@@ -168,7 +168,7 @@ while True:
 
     #Handling invalid options
     else:
-        print("\nInvalid optioln!\n")
+        print("\nInvalid option!\n")
         continue
 
 #End of the program
