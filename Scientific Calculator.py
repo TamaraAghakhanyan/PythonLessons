@@ -11,7 +11,7 @@ while True:
         val1 = float(input("\nFirst Value: "))
         val2 = float(input("\nSecond Value: "))
 
-        print("\nThe result is: " + str(val1 + val1) + "\n")
+        print("\nThe result is: " + str(val1 + val2) + "\n")
 
         #Going back to the main menu or exiting the program
         back = input("\nGo back to the main menu? (y/n) ")
@@ -26,7 +26,7 @@ while True:
         val1 = float(input("\nFirst Value: "))
         val2 = float(input("\nSecond Value: "))
 
-        print("\nThe result is: " + str(val1 - val1) + "\n")
+        print("\nThe result is: " + str(val1 - val2) + "\n")
 
         #Going back to the main menu or exiting the program
         back = input("\nGo back to the main menu? (y/n) ")
@@ -56,7 +56,7 @@ while True:
         val1 = float(input("\nFirst Value: "))
         val2 = float(input("\nSecond Value: "))
 
-        print("\nThe result is: " + str(val1 / val1) + "\n")
+        print("\nThe result is: " + str(val1 / val2) + "\n")
 
         #Going back to the main menu or exiting the program
         back = input("\nGo back to the main menu? (y/n) ")
@@ -71,7 +71,7 @@ while True:
         val1 = float(input("\nFirst Value: "))
         val2 = float(input("\nSecond Value: "))
 
-        print("\nThe result is: " + str(val1 % val1) + "\n")
+        print("\nThe result is: " + str(val1 % val2) + "\n")
 
         #Going back to the main menu or exiting the program
         back = input("\nGo back to the main menu? (y/n) ")
