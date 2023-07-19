@@ -39,17 +39,6 @@
 
 
 import psycopg2
-def print_hi():
-    connection = psycopg2.connect(
-        database="staff",
-        user="postgres",
-        password="postgres",
-        host="localhost",  # If your database is on the same machine, use "localhost"
-        port="5432"  # By default, PostgreSQL uses port 5432
-        )
-print("Connected to the database!")
-
-
 
 try:
     connection = psycopg2.connect(
