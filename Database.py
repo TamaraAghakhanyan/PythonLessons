@@ -73,12 +73,12 @@ try:
 #     connection.commit()
 # #
 #     to add a data in databace without commiting it:
-    with connection.cursor() as cursor:
-
-            # Execute the SQL query to insert multiple rows
-            cursor.execute("insert into mystaff.employees (id,first_name,last_name,department,phone,address,salary) \
-             values (6, 'Jane', 'Sanders', 'HR', '0123452289', '6th Street, Miami', 61000);")
-
+#     with connection.cursor() as cursor:
+#
+#             # Execute the SQL query to insert multiple rows
+#             cursor.execute("insert into mystaff.employees (id,first_name,last_name,department,phone,address,salary) \
+#              values (6, 'Jane', 'Sanders', 'HR', '0123452289', '6th Street, Miami', 61000);")
+#     connection.commit()
     print("Records inserted successfully!")
 
 except psycopg2.Error as e:
@@ -211,8 +211,8 @@ cursor = connection.cursor()
 # see lines 75-82
 
 # rolling back the change:
-connection.rollback()
-cursor.execute('''SELECT * FROM mystaff.employees;''')
-records = cursor.fetchall()
-for i in records:
-    print(i)
+# connection.rollback()
+# cursor.execute('''SELECT * FROM mystaff.employees;''')
+# records = cursor.fetchall()
+# for i in records:
+#     print(i)
