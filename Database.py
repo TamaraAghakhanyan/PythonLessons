@@ -141,8 +141,54 @@ cursor = connection.cursor()
 #     print(record)
 
 # querying using LIKE keyword:
-cursor.execute('''SELECT * FROM mystaff.employees WHERE last_name LIKE 'D%';''')
-records = cursor.fetchall()
-print(records)
-for record in records:
-    print(record)
+# cursor.execute('''SELECT * FROM mystaff.employees WHERE last_name LIKE 'D%';''')
+# records = cursor.fetchall()
+# print(records)
+# for record in records:
+#     print(record)
+
+# FETCHING THE INFORMARION FROM THE DATABASE WITH PYTHON
+
+# cursor.execute("select * from mystaff.employees where salary BETWEEN 40000 and 55000;")
+# # to fetch all the results of the above query and returns a list:
+# records = cursor.fetchall()
+# print(records)
+# for record in records:
+#     print(record)
+
+# to fetch the result of the query:
+# fetchone() - fetches the row/record of the query:
+# cursor.execute("select * from mystaff.employees where salary BETWEEN 40000 and 55000;")
+# records = cursor.fetchone()
+# print(records)
+# for record in records:
+#     print(record)
+#
+# records = cursor.fetchone()
+# print(records)
+# for record in records:
+#     print(record)
+#
+# records = cursor.fetchone()
+# print(records)
+# for record in records:
+#     print(record)
+#
+# records = cursor.fetchone()
+# print(records)
+# for record in records:
+#     print(record)
+#
+# records = cursor.fetchone()
+# print(records)
+# for record in records:
+#     print(record)
+
+# TypeError: 'NoneType' object is not iterable
+# fetchmany() - fetches multiple results from the query and fetches as many results as it is
+# specified inside query parantheses:
+
+cursor.execute("select * from mystaff.employees where salary BETWEEN 40000 and 55000;")
+records = cursor.fetchmany(size = 2)
+for i in records:
+    print(i)
