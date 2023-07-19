@@ -72,12 +72,24 @@ try:
 #                 (5, 'Emma', 'Richard', 'Marketing', '0423453580', '5th Street, Denver', 40000);")
 #     connection.commit()
 # #
+#     to add a data in databace without commiting it:
+    with connection.cursor() as cursor:
+
+            # Execute the SQL query to insert multiple rows
+            cursor.execute("insert into mystaff.employees (id,first_name,last_name,department,phone,address,salary) \
+             values (6, 'Jane', 'Sanders', 'HR', '0123452289', '6th Street, Miami', 61000);")
+
     print("Records inserted successfully!")
 
 except psycopg2.Error as e:
     print(f"Error connecting to the database: {e}")
 
 cursor = connection.cursor()
+
+# cursor.execute('''SELECT * FROM mystaff.employees;''')
+# records = cursor.fetchall()
+# for i in records:
+#     print(i)
 
 # cursor.execute('''create table mystaff.employees
 #       (id int primary key not null,
@@ -186,9 +198,21 @@ cursor = connection.cursor()
 
 # TypeError: 'NoneType' object is not iterable
 # fetchmany() - fetches multiple results from the query and fetches as many results as it is
-# specified inside query parantheses:
+# specified inside query parentheses. returns None when no more records are available:
 
-cursor.execute("select * from mystaff.employees where salary BETWEEN 40000 and 55000;")
-records = cursor.fetchmany(size = 2)
+# cursor.execute("select * from mystaff.employees where salary BETWEEN 40000 and 55000;")
+# records = cursor.fetchmany(size = 2)
+# for i in records:
+#     print(i)
+
+
+# COMMITTING AND ROLLING BACK TRANSACTIONS WITH PYTHON
+# add a record without commiting it:
+# see lines 75-82
+
+# rolling back the change:
+connection.rollback()
+cursor.execute('''SELECT * FROM mystaff.employees;''')
+records = cursor.fetchall()
 for i in records:
     print(i)
