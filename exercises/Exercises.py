@@ -440,9 +440,81 @@ line4
 line6
 line7'''
 
-with open("test.txt", "w") as file:
-    file.write("line1\nline2\nline3\nline4\nline5\nline6\nline7\n")
-print(file)
+
+# with open("test.txt", "w") as file:
+#     file.write("line1\n")
+#     file.write("line2\n")
+#     file.write("line3\n")
+#     file.write("line4\n")
+#     file.write("line5\n")
+#     file.write("line6\n")
+#     file.write("line7\n")
+#     file.write("line8\n")
+# print(file)
+#
+# with open("test.txt", "r") as file:
+#     content = file.read()
+#
+# with open("new_file.txt", "w") as new:
+#     count = 0
+#     for line in content.splitlines():
+#         if count == 4:
+#             count += 1
+#             continue
+#         else:
+#             new.write(line + "\n")
+#         count += 1
 
 
-# with open("new_file.txt") as file:
+'''Exercise 7: Accept any three string from one input() call
+Write a program to take three names as input from a user in
+the single input() function call.
+
+Expected Output
+
+Enter three string Emma Jessa Kelly
+Name1: Emma
+Name2: Jessa
+Name3: Kelly'''
+
+# name1, name2, name3 = input("Enter Name1, Name2, Name3").split()
+# print("Name1: ", name1, "\nName2: ", name2, "\nName3: ", name3)
+
+
+'''Exercise 8: Format variables using a string.format() method.
+Write a program to use string.format() method to format the following three variables as per the expected output
+
+Given:
+
+totalMoney = 1000
+quantity = 3
+price = 450
+
+Expected Output:
+
+I have 1000 dollars so I can buy 3 football for 450.00 dollars.'''
+
+# totalMoney = 1000
+# quantity = 3
+# price = 450
+#
+# result = "I have {} dollars so I can buy {} football for {} dollars".format(totalMoney, quantity, price)
+# print(result)
+
+'''Exercise 9: Check file is empty or not
+Write a program to check if the given file is empty or not'''
+
+with open("new_file.txt", "r") as new:
+    new.read()
+
+# import os
+#
+# def is_file_empty(file_path):
+#     return os.path.getsize(file_path) == 0
+#
+# file_path = "example.txt"  # Replace with the path to your file
+#
+# if is_file_empty(file_path):
+#     print("The file is empty.")
+# else:
+#     print("The file is not empty.")
