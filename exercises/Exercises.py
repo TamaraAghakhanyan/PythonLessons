@@ -507,14 +507,11 @@ Write a program to check if the given file is empty or not'''
 with open("new_file.txt", "r") as new:
     new.read()
 
-# import os
-#
-# def is_file_empty(file_path):
-#     return os.path.getsize(file_path) == 0
-#
-# file_path = "example.txt"  # Replace with the path to your file
-#
-# if is_file_empty(file_path):
-#     print("The file is empty.")
-# else:
-#     print("The file is not empty.")
+import os
+
+file_path = '/Users/tamaraaghakhanyan/MyPythonLessons/lessons/python/exercises/new_file.txt'
+
+if os.path.getsize("/Users/tamaraaghakhanyan/MyPythonLessons/lessons/python/exercises/new_file.txt") == 0:
+    print("The file is empty.")
+else:
+    print("The file is not empty.")
