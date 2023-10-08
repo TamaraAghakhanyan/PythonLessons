@@ -504,14 +504,84 @@ I have 1000 dollars so I can buy 3 football for 450.00 dollars.'''
 '''Exercise 9: Check file is empty or not
 Write a program to check if the given file is empty or not'''
 
-with open("new_file.txt", "r") as new:
-    new.read()
+# with open("new_file.txt", "r") as new:
+#     new.read()
+#
+# import os
+#
+# file_path = '/Users/tamaraaghakhanyan/MyPythonLessons/lessons/python/exercises/new_file.txt'
+#
+# if os.path.getsize("/Users/tamaraaghakhanyan/MyPythonLessons/lessons/python/exercises/new_file.txt") == 0:
+#     print("The file is empty.")
+# else:
+#     print("The file is not empty.")
 
-import os
+'''Exercise 10: Read line number 4 from the following file
 
-file_path = '/Users/tamaraaghakhanyan/MyPythonLessons/lessons/python/exercises/new_file.txt'
+Create a test.txt file and add the below content to it.
 
-if os.path.getsize("/Users/tamaraaghakhanyan/MyPythonLessons/lessons/python/exercises/new_file.txt") == 0:
-    print("The file is empty.")
-else:
-    print("The file is not empty.")
+test.txt file:
+
+line1
+line2
+line3
+line4
+line5
+line6
+line7'''
+
+# file_path = "/Users/tamaraaghakhanyan/MyPythonLessons/lessons/python/exercises/test.txt"
+#
+# import linecache
+# res = linecache.getline(file_path, 4)
+# print(res)
+
+'''A person is playing a guessing game in which they have 3 guesses to 
+figure out the computer’s secret letter which will be between A and Z inclusive. 
+If they guess the letter correctly on the first guess the program should stop making 
+them guess and they should get 26 points. If they guess the letter correctly on the 
+second guess the program should stop making them guess and they should get 13 points. 
+If they guess the letter correctly on the third guess, they should get 7 points. 
+After an incorrect guess tell the user if their guess was too high or too low based on 
+the results of checkGuess. If they fail to guess the letter correctly after 
+3 guesses they get 0 points. Be sure to tell them what score they got.'''
+
+import random, string
+
+letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
+'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+secret_letter = random.choice(letters)
+p1, p2, p3, p4 = 26, 13, 7, 0
+
+alphabet = dict()
+for id, letter in enumerate(string.ascii_uppercase):
+    alphabet[letter] = id + 1
+
+rounds = 1
+while rounds != 4:
+    player_guess = input("Guess a letter from A - Z: ").upper()
+    if rounds == 1 and player_guess == secret_letter:
+        print(f"Congrats! You guessed the Secret Letter: '{secret_letter}' in Round {rounds}! You get {p1} points.")
+        break
+    elif rounds == 2 and player_guess == secret_letter:
+        print(f"Congrats! You guessed the Secret Letter: '{secret_letter}' in Round {rounds}! You get {p2} points.")
+        break
+    elif rounds == 3 and player_guess == secret_letter:
+        print(f"Congrats! You guessed the Secret Letter: '{secret_letter}' in Round {rounds}! You get {p3} points.")
+        break
+    elif rounds == 3 and player_guess != secret_letter:
+        print(f"You failed to guess the secret letter, {secret_letter}, in time. You get {p4} points.")
+        break
+    else:
+        if player_guess > secret_letter:
+            print(f"Your guess, '{player_guess}' is too high.")
+        elif player_guess < secret_letter:
+            print(f"Your guess, '{player_guess}' is too low.")
+    rounds += 1
+
+
+
+
+
+
+
