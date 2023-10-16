@@ -1194,16 +1194,20 @@ Expected Output:
 [4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]'''
 
 
-def even_numbers(a, b):
-    even_list = []
-    for i in range(a, b +1):
-        if i % 2 == 0:
-            even_list.append(i)
-    return even_list
-
-
-result = even_numbers(4, 30)
-print(result)
+# def even_numbers(a, b):
+#     even_list = []
+#     for i in range(a, b):
+#         if i % 2 == 0:
+#             even_list.append(i)
+#     return even_list
+#
+#
+# result = even_numbers(4, 30)
+# print(result)
+#
+# # OR
+#
+# print(list(range(4, 30, 2)))
 
 
 
