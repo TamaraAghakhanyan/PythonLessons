@@ -1210,7 +1210,69 @@ Expected Output:
 # print(list(range(4, 30, 2)))
 
 
+'''Exercise 9: Find the largest item from a given list
+x = [4, 6, 8, 24, 12, 2]
+Expected Output:
+
+24'''
+
+# x = [4, 6, 8, 24, 12, 2]
+#
+# print(max(x))
 
 
+'''Python String Exercises'''
 
+
+'''Exercise 1A: Create a string made of the first, middle and last character
+Write a program to create a new string made of an input string’s first, middle, and last character.
+
+Given:
+
+str1 = "James"
+Expected Output:
+
+Jms'''
+#
+# str1 = "James"
+#
+# num = int(len(str1) / 2)
+# str2 = str1[0]
+# str2 = str2 + str1[num] + str1[-1]
+#
+# print(str2)
+
+
+'''Exercise 1B: Create a string made of the middle three characters
+Write a program to create a new string made of the middle three characters of an input string.
+
+Given:
+
+Case 1
+
+str1 = "JhonDipPeta"
+Output
+
+Dip
+Case 2
+
+str2 = "JaSonAy"
+Output
+
+Son'''
+
+# str1 = input("Enter a string No 1: ")
+# str2 = input("Enter a string No 2: ")
+#
+# l1 = len(str1)
+# l2 = len(str2)
+#
+# mid_char1 = int(l1 / 2)
+# mid_char2 = int(l2 / 2)
+#
+# res1 = str1[mid_char1 - 1 : mid_char1 + 2]
+# res2 = str2[mid_char2 - 1 : mid_char2 + 2]
+#
+# print("middle three characters of string No 1: ", res1)
+# print("middle three characters of string No 2: ", res2)
 
