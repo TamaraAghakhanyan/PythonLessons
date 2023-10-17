@@ -1,4 +1,5 @@
 ''''Basic Exercise for Beginners'''
+from curses.ascii import isalpha
 
 '''Exercise 1: Calculate the multiplication and sum of two numbers
 Given two integer numbers, return their product only if the product
@@ -1275,4 +1276,177 @@ Son'''
 #
 # print("middle three characters of string No 1: ", res1)
 # print("middle three characters of string No 2: ", res2)
+
+'''Exercise 2: Append new string in the middle of a given string
+Given two strings, s1 and s2. Write a program to create a new string s3 by appending s2 in the middle of s1.
+
+Given:
+
+s1 = "Ault"
+s2 = "Kelly"
+Expected Output:
+
+AuKellylt'''
+
+# s1 = "Ault"
+# s2 = "Kelly"
+#
+# mid_s1 = int(len(s1) / 2)
+# part1 = s1[: mid_s1]
+# part2 = s1[mid_s1 :]
+# s3 = part1 + s2 + part2
+# print(s3)
+
+
+'''Exercise 3: Create a new string made of the first, middle, and last characters of each input string
+
+Given two strings, s1 and s2, write a program to return a new string made of s1 and s2’s first, middle, and last characters.
+
+Given:
+
+s1 = "America"
+s2 = "Japan"
+Expected Output:
+
+AJrpan'''
+
+# s1 = "America"
+# s2 = "Japan"
+#
+# mid_s1 = int(len(s1) / 2)
+# mid_s2 = int(len(s2) / 2)
+#
+# new_str = s1[0] + s2[0] + s1[mid_s1] + s2[mid_s2] + s1[-1] + s2[-1]
+# print(new_str)
+
+
+'''Exercise 4: Arrange string characters such that lowercase letters should come
+first
+Given string contains a combination of the lower and upper case letters. 
+Write a program to arrange the characters of a string so that all lowercase letters 
+should come first.
+
+Given:
+
+str1 = "PyNaTive"
+
+Expected Output:
+
+yaivePNT'''
+
+
+# str1 = "PyNaTive
+# s1 = str()
+# s2 = str()
+# for i in str1:
+#     if i.islower():
+#         s1 = s1 + i
+#     else:
+#         s2 = s2 + i
+#
+# result = s1 + s2
+# print(result)
+
+'''Exercise 5: Count all letters, digits, and special symbols from a given string
+Given:
+
+str1 = "P@#yn26at^&i5ve"
+Expected Outcome:
+
+Total counts of chars, digits, and symbols 
+
+Chars = 8 
+Digits = 3 
+Symbol = 4'''
+
+
+# str1 = "P@#yn26at^&i5ve"
+#
+# chars = 0
+# digits = 0
+# symbols = 0
+#
+# print("Total counts of chars, digits, and symbols")
+#
+# for i in str1:
+#     if isalpha(i):
+#         chars = chars + 1
+#     elif i.isdigit():
+#         digits = digits + 1
+#     else:
+#         symbols = symbols + 1
+#
+# print("Chars =", chars, "\n""Digits =", digits, "\n""Symbol =", symbols)
+
+
+'''Exercise 6: Create a mixed String using the following rules
+Given two strings, s1 and s2. Write a program to create a new string s3 
+made of the first char of s1, then the last char of s2, Next, 
+the second char of s1 and second last char of s2, and so on. 
+Any leftover chars go at the end of the result.
+
+Given:
+
+s1 = "Abc"
+s2 = "Xyz"
+Expected Output:
+
+AzbycX'''
+
+'''s1 = "Abc"
+s2 = "Xyz"
+
+# get string length
+s1_length = len(s1)
+s2_length = len(s2)
+
+# get length of a bigger string
+length = s1_length if s1_length > s2_length else s2_length
+result = ""
+
+# reverse s2
+s2 = s2[::-1]
+
+# iterate string
+# s1 ascending and s2 descending
+for i in range(length):
+    if i < s1_length:
+        result = result + s1[i]
+    if i < s2_length:
+        result = result + s2[i]
+
+print(result)'''
+
+
+''''Exercise 7: String characters balance Test
+Write a program to check if two strings are balanced. For example, strings s1 and s2 are balanced if all the characters in the s1 are present in s2. The character’s position doesn’t matter.
+
+Given:
+
+
+Case 1:
+
+s1 = "Yn"
+s2 = "PYnative"
+Expected Output:
+
+True
+Case 2:
+
+s1 = "Ynf"
+s2 = "PYnative"
+Expected Output:
+
+False'''
+
+
+
+
+
+
+
+
+
+
+
 
