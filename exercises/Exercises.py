@@ -1439,6 +1439,168 @@ Expected Output:
 
 False'''
 
+'''Exercise 8: Find all occurrences of a substring in a given string by ignoring the case
+Write a program to find all occurrences of “USA” in a given string ignoring the case.
+
+Given:
+
+str1 = "Welcome to USA. usa awesome, isn't it?"
+Expected Outcome:
+
+
+The USA count is: 2'''
+
+# str1 = "Welcome to USA. usa awesome, isn't it?"
+# s1 = str1.lower()
+# count = s1.count("usa")
+#
+# print("The USA count is: ", count)
+
+
+'''Exercise 9: Calculate the sum and average of the digits present in a string
+Given a string s1, write a program to return the sum and average of the digits that appear in the string, ignoring all other characters.
+
+Given:
+
+str1 = "PYnative29@#8496"
+Expected Outcome:
+
+Sum is: 38 Average is  6.333333333333333'''
+
+# str1 = "PYnative29@#8496"
+#
+# count = 0
+# x = 0
+# list1 = []
+# for i in str1:
+#     if i.isdigit():
+#         count = count + 1
+#         x = int(i)
+#         list1.append(x)
+#
+# s = sum(list1)
+# a = s / count
+#
+# print("Sum:", s, "Average:", a)
+
+
+'''Exercise 10: Write a program to count occurrences of all characters within a string
+Given:
+
+str1 = "Apple"
+Expected Outcome:
+
+{'A': 1, 'p': 2, 'l': 1, 'e': 1}'''
+
+# str1 = "Apple"
+# dict1 = {}
+# key = str()
+# value = int()
+#
+# for i in str1:
+#     key = i
+#     value = str1.count(i)
+#     dict1.update({key:value})
+#
+# print(dict1)
+
+
+'''Exercise 11: Reverse a given string
+Given:
+
+str1 = "PYnative"
+Expected Output:
+
+evitanYP'''
+
+# str1 = "PYnative"
+# print(str1[:: -1])
+
+'''Exercise 12: Find the last position of a given substring
+Write a program to find the last position of a substring “Emma” in a given string.
+
+Given:
+
+str1 = "Emma is a data scientist who knows Python. Emma works at google."
+Expected Output:
+
+Last occurrence of Emma starts at index 43'''
+
+# str1 = "Emma is a data scientist who knows Python. Emma works at google."
+# x = str1.rfind("Emma")
+# print("Last occurrence of Emma starts at index", x)
+
+
+'''Exercise 13: Split a string on hyphens
+Write a program to split a given string on hyphens and display each substring.
+
+Given:
+
+str1 = Emma-is-a-data-scientist
+Expected Output:
+
+Displaying each substring
+
+Emma
+is
+a
+data
+scientist'''
+
+
+# str1 = "Emma-is-a-data-scientist"
+# #
+# # res = str1.split("-",)
+# #
+# # print("Displaying each substring", "\n")
+# #
+# # for i in res:
+# #     print(i)
+
+'''Exercise 14: Remove empty strings from a list of strings
+Given:
+
+str_list = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+Expected Output:
+
+Original list of sting
+['Emma', 'Jon', '', 'Kelly', None, 'Eric', '']
+
+After removing empty strings
+['Emma', 'Jon', 'Kelly', 'Eric']'''
+
+
+# str_list = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+#
+# new_list = []
+#
+# for i in str_list:
+#     if i:
+#         new_list.append(i)
+#
+# print(new_list)
+
+'''Exercise 15: Remove special symbols / punctuation from a string
+Given:
+
+str1 = "/*Jon is @developer & musician"
+Expected Output:'''
+
+
+str1 = "/*Jon is @developer & musician"
+
+for i in str1:
+    if isalpha(i):
+        pass
+    elif i == " ":
+        pass
+    else:
+        filter(i)
+
+
+
+
+
 
 
 
